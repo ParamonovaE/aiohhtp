@@ -1,0 +1,36 @@
+
+POST http://0.0.0.0:8080/add_user
+Content-Type: application/json
+
+{
+  "name": "Кирилл"
+}
+
+###
+
+POST http://0.0.0.0:8080/ads/
+Content-Type: application/json
+
+{
+    "title": "Продажа компьютера",
+    "description": "Компьютер в отличном состоянии",
+    "owner_id": 1
+}
+
+###
+
+GET http://0.0.0.0:8080/ads/1/
+
+###
+
+PATCH http://0.0.0.0:8080/ads/1/
+Content-Type: application/json
+
+{
+    "description": "Ноутбук в идеальном состоянии"
+}
+
+###
+
+DELETE http://0.0.0.0:8080/ads/1/
+
